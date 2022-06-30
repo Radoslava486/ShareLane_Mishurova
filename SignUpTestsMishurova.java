@@ -118,7 +118,7 @@ public class SignUpTestsMishurova {
         driver.findElement(By.cssSelector("[type ='text']")).sendKeys("War and Peace");
         WebElement searchButton = driver.findElement(By.cssSelector("[value='Search']"));
         searchButton.click();
-        Assert.assertTrue(driver.findElement(By.xpath("//*[text()=‘War and Peace’]")).isDisplayed(), " Relevant books should be displayed " );
+        Assert.assertTrue(driver.findElement(By.xpath("//*[text()='War and Peace ']")).isDisplayed(), " Relevant books should be displayed " );
 
     }
 
@@ -138,5 +138,8 @@ public class SignUpTestsMishurova {
         driver.findElement(By.name("keyword")).sendKeys("Leo Tolstoy");
         WebElement searchButton = driver.findElement(By.cssSelector("[value='Search']"));
         searchButton.click();
-        Assert.assertTrue(driver.findElement(By.xpath("//*[text()=‘Leo Tolstoy’]")).isDisplayed(), " Relevant books should be displayed " );
+        Assert.assertTrue(driver.findElement(By.xpath("//*[text()='Leo Tolstoy']")).isDisplayed(), " Relevant books should be displayed " );
     }
+
+
+}
